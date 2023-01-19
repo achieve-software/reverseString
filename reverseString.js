@@ -1,11 +1,13 @@
 // 2- Belirli bir string ifadenin tersini bulan fonksiyonu yazınız?
 // console.log(reverseString('hello world')) // output: dlrow olleh
 
-const metin = "hello world";
+let metin = "";
 
 function reverseString(metin) {
+  let str = "";
   for (let i = metin.length - 1; i >= 0; i--) {
-    console.log(metin[i]);
+    str += metin[i];
   }
+  return str;
 }
-reverseString(metin);
+console.log(reverseString("hello world"));
